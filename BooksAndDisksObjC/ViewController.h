@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController 
+@property NSArray* product;
+@property (weak, nonatomic) IBOutlet UILabel *typeProduct;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *category;
+@property (weak, nonatomic) IBOutlet UILabel *pgesOfTypeDisk;
+@property (weak, nonatomic) IBOutlet UILabel *aboutBook;
+@property (weak, nonatomic) IBOutlet UILabel *barcode;
+@property (weak, nonatomic) IBOutlet UILabel *price;
 
+-(void) viewProduct;
 
 @end
 
